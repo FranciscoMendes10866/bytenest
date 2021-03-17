@@ -1,16 +1,17 @@
 import styled from '@emotion/styled'
 
 export const Button = styled.button`
-  background-color: #0C090D;
+  padding: 12px 30px;
+  background-color: #000;
   color: #fff;
-  font-size: 18px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 30px;
-  margin-top: 30px;
-  border-radius: 6px;
-  border: none;
-  letter-spacing: 1.5px;
+  border: 0px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 3px 25px rgb(129, 129, 129);
+    }
 `;
