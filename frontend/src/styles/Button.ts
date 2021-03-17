@@ -13,4 +13,4 @@ export const Button = styled.button`
   border-radius: 6px;
   border: none;
   letter-spacing: 1.5px;
-`
+`;

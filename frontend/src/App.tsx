@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Button } from './styles/Button'
+import { Button } from "./styles/Button";
 
 const App: FC = () => (
   <>
