@@ -123,6 +123,10 @@ export const MainPriceCard = styled.div`
     @media only screen and (max-width: 768px) {
         margin-bottom: 24px;
         padding: 24px;
+        transform: scale(1);
+        &:hover {
+            transform: scale(0.9);
+        }
     }
 `;
 
