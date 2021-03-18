@@ -2,7 +2,7 @@ import { FC } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { get as getCookie } from 'js-cookie'
 
-import { Navbar } from './components/index'
+import { Navbar, Footer } from './components/index'
 import { Home } from './pages'
 
 const App: FC = () => {
@@ -20,6 +20,7 @@ const App: FC = () => {
           ) : null }
         </Switch>
       </Router>
+      <Footer />
     </>
   )
 };
