@@ -28,6 +28,7 @@ const Home: FC = () => {
   return (
     <Container>
       <Row>
+      <span id="home"></span>
         <Col xs={4} md={6} xl={6}>
           <ContentLeft>
             <Title>Open Source Password Manager</Title>
@@ -44,6 +45,7 @@ const Home: FC = () => {
         </Col>
       </Row>
       <Row style={{ marginTop: 48 }}>
+      <span id="why"></span>
         <Col xs={4} md={12} xl={12}>
           <Title style={{ textAlign: "center" }}>Why choose ByteNest?</Title>
         </Col>
@@ -90,6 +92,7 @@ const Home: FC = () => {
           </ContentCenter>
         </Col>
         <Col xs={4} md={6} xl={6}>
+          <span id="security"></span>
           <ContentLeft>
             <Title>Secure Passwords Anywhere</Title>
             <Text>
@@ -103,6 +106,7 @@ const Home: FC = () => {
       </Row>
       <Row>
         <Col xs={4} md={6} xl={6}>
+          <span id="privacy"></span>
           <ContentLeft>
             <Title>Privacy</Title>
             <Text>
@@ -120,11 +124,12 @@ const Home: FC = () => {
         </Col>
       </Row>
       <Row style={{ marginTop: 48 }}>
+      <span id="pricing"></span>
         <Col xs={4} md={12} xl={12}>
           <Title style={{ textAlign: "center" }}>Plans and Pricing</Title>
         </Col>
       </Row>
-      <Row style={{ paddingTop: 70, paddingBottom: 48, marginBottom: 30}}>
+      <Row style={{ paddingTop: 70, paddingBottom: 48, marginBottom: 30 }}>
         <Col xs={4} md={4} xl={4}>
           <PriceCard>
             <CardTitle>Free Forever</CardTitle>
@@ -147,8 +152,8 @@ const Home: FC = () => {
               entire organization.
             </CardContent>
             <CardSmall>
-              Includes Free Plan Features for all users. Explore our Standard plan
-              free for 7 days.
+              Includes Free Plan Features for all users. Explore our Standard
+              plan free for 7 days.
             </CardSmall>
           </MainPriceCard>
         </Col>
@@ -161,8 +166,8 @@ const Home: FC = () => {
               authentication, and self-hosting.
             </CardContent>
             <CardSmall>
-              Includes Standard Features for all users. Explore our
-              Premium plan free for 7 days.
+              Includes Standard Features for all users. Explore our Premium plan
+              free for 7 days.
             </CardSmall>
           </PriceCard>
         </Col>

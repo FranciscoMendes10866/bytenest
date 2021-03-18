@@ -1,16 +1,9 @@
 import { FC } from "react";
 import { Container } from "@mverissimoo/emotion-grid";
 import { FaMagento } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-import {
-  Nav,
-  Items,
-  Item,
-  ItemAnchor,
-  Brand,
-  Actions,
-  Button,
-} from "./styles";
+import { Nav, Items, Item, ItemAnchor, Brand, Actions, Button } from "./styles";
 import { PrimaryButton, DangerButton } from "../buttons/styles";
 
 const Navbar: FC = () => {
@@ -18,31 +11,43 @@ const Navbar: FC = () => {
     <Container>
       <Nav>
         <Brand>
-          <FaMagento />
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+            <FaMagento />
+          </Link>
         </Brand>
         <Items>
           <Item>
-            <ItemAnchor>Home</ItemAnchor>
+            <ItemAnchor href="#home">Home</ItemAnchor>
           </Item>
           <Item>
-            <ItemAnchor>Why</ItemAnchor>
+            <ItemAnchor href="#why">Why</ItemAnchor>
           </Item>
           <Item>
-            <ItemAnchor>Security</ItemAnchor>
+            <ItemAnchor href="#security">Security</ItemAnchor>
           </Item>
           <Item>
-            <ItemAnchor>Privacy</ItemAnchor>
+            <ItemAnchor href="#privacy">Privacy</ItemAnchor>
           </Item>
           <Item>
-            <ItemAnchor>Pricing</ItemAnchor>
+            <ItemAnchor href="#pricing">Pricing</ItemAnchor>
           </Item>
         </Items>
         <Actions>
-        <Button>
-            <DangerButton>Sign in</DangerButton>
+          <Button>
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/signin"
+            >
+              <DangerButton>Sign In</DangerButton>
+            </Link>
           </Button>
           <Button>
+            <Link
+              style={{ textDecoration: "none", color: "inherit" }}
+              to="/signup"
+            >
             <PrimaryButton>Sign up</PrimaryButton>
+            </Link>
           </Button>
         </Actions>
       </Nav>
