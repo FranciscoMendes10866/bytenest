@@ -3,7 +3,16 @@ import { Container } from "@mverissimoo/emotion-grid";
 import { FaMagento } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import { Nav, Items, Item, ItemAnchor, Brand, Actions, Button } from "./styles";
+import {
+  Nav,
+  Items,
+  Item,
+  ItemAnchor,
+  Brand,
+  Actions,
+  Button,
+  ItemLink,
+} from "./styles";
 import { PrimaryButton, DangerButton } from "../buttons/styles";
 
 const Navbar: FC = () => {
@@ -17,7 +26,9 @@ const Navbar: FC = () => {
         </Brand>
         <Items>
           <Item>
-            <ItemAnchor href="#home">Home</ItemAnchor>
+            <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+              <ItemLink>Home</ItemLink>
+            </Link>
           </Item>
           <Item>
             <ItemAnchor href="#why">Why</ItemAnchor>
@@ -46,7 +57,7 @@ const Navbar: FC = () => {
               style={{ textDecoration: "none", color: "inherit" }}
               to="/signup"
             >
-            <PrimaryButton>Sign up</PrimaryButton>
+              <PrimaryButton>Sign up</PrimaryButton>
             </Link>
           </Button>
         </Actions>

@@ -1,5 +1,10 @@
 import { FC } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import { get as getCookie } from "js-cookie";
 
 import { Navbar, Footer } from "./components/index";
