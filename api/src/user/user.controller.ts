@@ -32,6 +32,10 @@ class UserController {
     return res.cookie('access_token', token, { httpOnly: true, secure: NODE_ENV === 'PRODUCTION' })
       .json({ username: exists[0].username }).status(200)
   }
+
+  async Logout (req: Request, res: Response) {
+    return res.clearCookie('access_token').sendStatus(200)
+  }
 }
 
 export default new UserController()

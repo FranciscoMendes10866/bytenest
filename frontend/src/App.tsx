@@ -5,25 +5,30 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import { get as getCookie } from "js-cookie";
 
 import { Navbar, Footer } from "./components/index";
-import { Home, SignIn, SignUp } from "./pages";
+import { Home, SignIn, SignUp, Panel } from "./pages";
+import { useStore } from "./store";
 
 const App: FC = () => {
-  const isLoggedIn = getCookie("access_token");
+  const username = useStore((state) => state.username);
   return (
     <Router>
       <Navbar />
       <Switch>
-        {!isLoggedIn ? (
+        {!username ? (
           <>
             <Route exact path="/" component={Home} />
             <Route path="/signin" component={SignIn} />
             <Route path="/signup" component={SignUp} />
             <Redirect to="/" />
           </>
-        ) : null}
+        ) : (
+          <>
+            <Route path="/panel" component={Panel} />
+            <Redirect to="/panel" />
+          </>
+        )}
       </Switch>
       <Footer />
     </Router>
