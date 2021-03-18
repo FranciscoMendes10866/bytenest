@@ -10,7 +10,7 @@ import {
   Brand,
   Actions,
   Button,
-} from "./navbar.styles";
+} from "./styles";
 import { PrimaryButton, DangerButton } from "../buttons/styles";
 
 const Navbar: FC = () => {
@@ -25,7 +25,16 @@ const Navbar: FC = () => {
             <ItemAnchor>Home</ItemAnchor>
           </Item>
           <Item>
-            <ItemAnchor>About</ItemAnchor>
+            <ItemAnchor>Why</ItemAnchor>
+          </Item>
+          <Item>
+            <ItemAnchor>Security</ItemAnchor>
+          </Item>
+          <Item>
+            <ItemAnchor>Privacy</ItemAnchor>
+          </Item>
+          <Item>
+            <ItemAnchor>Pricing</ItemAnchor>
           </Item>
         </Items>
         <Actions>
