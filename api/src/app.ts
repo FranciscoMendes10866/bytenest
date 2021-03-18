@@ -14,7 +14,7 @@ const app = express()
 if (NODE_ENV !== 'TESTING') app.use(morgan('dev'))
 
 app.use(express.json())
-app.use(cors({ credentials: true }))
+app.use(cors({ credentials: true, origin: ['http://localhost:3000'] }))
 app.use(helmet())
 app.use(cookieParser())
 app.use(compression())
