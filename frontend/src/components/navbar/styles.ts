@@ -9,6 +9,7 @@ export const Nav = styled.nav`
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   margin-top: 20px;
+  height: 65px;
 `;
 
 export const Items = styled.ul`
@@ -21,8 +22,6 @@ export const Items = styled.ul`
 export const Item = styled.li`
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 `;
 
 export const ItemLink = styled.span`
