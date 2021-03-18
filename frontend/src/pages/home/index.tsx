@@ -28,7 +28,6 @@ const Home: FC = () => {
   return (
     <Container>
       <Row>
-      <span id="home"></span>
         <Col xs={4} md={6} xl={6}>
           <ContentLeft>
             <Title>Open Source Password Manager</Title>
@@ -45,7 +44,7 @@ const Home: FC = () => {
         </Col>
       </Row>
       <Row style={{ marginTop: 48 }}>
-      <span id="why"></span>
+        <span id="why"></span>
         <Col xs={4} md={12} xl={12}>
           <Title style={{ textAlign: "center" }}>Why choose ByteNest?</Title>
         </Col>
@@ -124,7 +123,7 @@ const Home: FC = () => {
         </Col>
       </Row>
       <Row style={{ marginTop: 48 }}>
-      <span id="pricing"></span>
+        <span id="pricing"></span>
         <Col xs={4} md={12} xl={12}>
           <Title style={{ textAlign: "center" }}>Plans and Pricing</Title>
         </Col>
@@ -132,7 +131,7 @@ const Home: FC = () => {
       <Row style={{ paddingTop: 70, paddingBottom: 48, marginBottom: 30 }}>
         <Col xs={4} md={4} xl={4}>
           <PriceCard>
-            <CardTitle>Free Forever</CardTitle>
+            <CardTitle>Free</CardTitle>
             <CardPrice>0€/month</CardPrice>
             <CardContent>
               Start storing and sharing secure passwords with a two-person
